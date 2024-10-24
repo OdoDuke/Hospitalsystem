@@ -1,0 +1,153 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+
+body{
+    background: #fdffff67
+     ;
+    display:flex;
+    align-items: center;
+    background: url("Hospital Images/img.webp") no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 100% 5%;
+    
+   
+
+   
+}
+
+nav{
+    margin: 10px;
+    width: 10%;
+    height:10%;
+
+} 
+
+.logo{
+    margin-bottom:auto;
+}
+.logo, img{
+    margin-left: -40px;
+    width: 100px;
+    
+}
+  
+body ::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -100;
+    
+    background-position: center;
+    
+}
+.form-wrapper{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    width: 430px;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.438);
+    background:  rgba(255, 255, 255, 0.647);
+    transform: translate(-50%, -50%);
+
+}  
+ 
+
+.form-wrapper h2 {
+    
+    font-size: 2rem;
+    text-align: center;
+    text-indent: -100px;
+    margin: 0px 0 30px;
+    
+}
+
+.form-wrapper form{
+    margin: 5px 0 ;
+}
+
+form.form-control{
+    position:relative;
+    height:50px;
+    margin-bottom: 16px;
+}
+
+.form-control input{
+    height: 30px;
+    width: 100%;
+    background: #3333339b;
+    outline: none;
+    border:solid rgba(34, 139, 34, 0.153);
+    border-radius: 10px;
+    box-shadow: 10px;
+    font-size: 1rem;
+    padding: 15px 20px;
+    margin: 1px;
+    
+}
+
+.form-control input:is(:focus, :valid){
+    padding: 16px 20px 0;
+    background: #ffffff65;
+    
+
+}
+  .form-control label {
+    
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    
+    color: #190606;
+    pointer-events:none;
+    transform: translateY(-150%);
+    transition: all 0.1s ease;
+    
+  }
+
+.form-control input:is(:focus,:valid)~label{
+    font-size:0.75rem;
+    transform:translateX(-130%);
+}
+
+form button{
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline:none;
+    color:#fff;
+    font-weight: 500;
+    background: #ac0c0c;
+    border-radius: 4px;
+    background: #00a81c;
+    margin: 25px 0 10px;
+
+}
+
+form button:hover{
+    background: #5baa00;
+
+}
+
+form .form-help{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+.form-wrapper :where(label, p, small, a){
+    color: rgb(0, 0, 0);
+}
